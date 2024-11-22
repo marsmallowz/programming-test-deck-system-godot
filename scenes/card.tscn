@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://buxm8t5pmshy0"]
+[gd_scene load_steps=5 format=3 uid="uid://buxm8t5pmshy0"]
 
 [ext_resource type="Script" path="res://scripts/card.gd" id="1_tklqp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w8nfx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kwk5f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f5y8s"]
 
 [node name="Card" type="Button"]
 custom_minimum_size = Vector2(100, 120)
@@ -32,11 +36,28 @@ layout_mode = 2
 alignment = 1
 
 [node name="BuyButton" type="Button" parent="HoverModal/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_w8nfx")
 text = "Buy"
 
+[node name="DiscardButton" type="Button" parent="HoverModal/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_kwk5f")
+text = "Discard"
+
+[node name="SellButton" type="Button" parent="HoverModal/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_f5y8s")
+text = "Sell"
+
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="pressed" from="HoverModal/MarginContainer/VBoxContainer/BuyButton" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="HoverModal/MarginContainer/VBoxContainer/DiscardButton" to="." method="_on_discard_button_pressed"]
+[connection signal="pressed" from="HoverModal/MarginContainer/VBoxContainer/SellButton" to="." method="_on_sell_button_pressed"]

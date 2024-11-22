@@ -1,8 +1,7 @@
-extends Resource
+extends Card
 
-class_name CardOnDeck
+class_name CardOnDeck 
 
 enum CardStatus {ACTIVE, DISCARD}
 
-@export var card : Card
-@export var card_status : CardStatus = CardStatus.ACTIVE
+var card_status : CardStatus = CardStatus.ACTIVE
