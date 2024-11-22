@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="ListCard" load_steps=20 format=3 uid="uid://bhxuxv02rmxxf"]
+
+[ext_resource type="Script" path="res://models/card.gd" id="1_orvkn"]
+[ext_resource type="Script" path="res://models/list_card.gd" id="2_7he5j"]
+
+[sub_resource type="Resource" id="Resource_an5wc"]
+script = ExtResource("1_orvkn")
+id = 1
+card_name = "Card 1"
+
+[sub_resource type="Resource" id="Resource_ix4ny"]
+script = ExtResource("1_orvkn")
+id = 2
+card_name = "Card 2"
+
+[sub_resource type="Resource" id="Resource_3taki"]
+script = ExtResource("1_orvkn")
+id = 3
+card_name = "Card 3"
+
+[sub_resource type="Resource" id="Resource_4ll45"]
+script = ExtResource("1_orvkn")
+id = 4
+card_name = "Card 4"
+
+[sub_resource type="Resource" id="Resource_l1nx5"]
+script = ExtResource("1_orvkn")
+id = 5
+card_name = "Card 5"
+
+[sub_resource type="Resource" id="Resource_5j5ui"]
+script = ExtResource("1_orvkn")
+id = 6
+card_name = "Card 6"
+
+[sub_resource type="Resource" id="Resource_ry8w0"]
+script = ExtResource("1_orvkn")
+id = 7
+card_name = "Card 7"
+
+[sub_resource type="Resource" id="Resource_ey26k"]
+script = ExtResource("1_orvkn")
+id = 8
+card_name = "Card 8"
+
+[sub_resource type="Resource" id="Resource_5smv5"]
+script = ExtResource("1_orvkn")
+id = 9
+card_name = "Card 9"
+
+[sub_resource type="Resource" id="Resource_51fj8"]
+script = ExtResource("1_orvkn")
+id = 10
+card_name = "Card 10"
+
+[sub_resource type="Resource" id="Resource_pin18"]
+script = ExtResource("1_orvkn")
+id = 11
+card_name = "Card 11"
+
+[sub_resource type="Resource" id="Resource_reya0"]
+script = ExtResource("1_orvkn")
+id = 12
+card_name = "Card 12"
+
+[sub_resource type="Resource" id="Resource_pg4he"]
+script = ExtResource("1_orvkn")
+id = 13
+card_name = "Card 13"
+
+[sub_resource type="Resource" id="Resource_sdvdw"]
+script = ExtResource("1_orvkn")
+id = 14
+card_name = "Card 14"
+
+[sub_resource type="Resource" id="Resource_qg231"]
+script = ExtResource("1_orvkn")
+id = 15
+card_name = "Card 15"
+
+[sub_resource type="Resource" id="Resource_pax65"]
+script = ExtResource("1_orvkn")
+id = 16
+card_name = "Card 16"
+
+[sub_resource type="Resource" id="Resource_npdxf"]
+script = ExtResource("1_orvkn")
+id = 17
+card_name = "Card 17"
+
+[resource]
+script = ExtResource("2_7he5j")
+data = Array[ExtResource("1_orvkn")]([SubResource("Resource_an5wc"), SubResource("Resource_ix4ny"), SubResource("Resource_3taki"), SubResource("Resource_4ll45"), SubResource("Resource_l1nx5"), SubResource("Resource_5j5ui"), SubResource("Resource_ry8w0"), SubResource("Resource_ey26k"), SubResource("Resource_5smv5"), SubResource("Resource_51fj8"), SubResource("Resource_pin18"), SubResource("Resource_reya0"), SubResource("Resource_pg4he"), SubResource("Resource_sdvdw"), SubResource("Resource_qg231"), SubResource("Resource_pax65"), SubResource("Resource_npdxf")])
